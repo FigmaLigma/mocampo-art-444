@@ -1,14 +1,23 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+  .paragraph {
+    overflow-x: hidden;
+  }
   .button {
     scale: 50%
   }
   .maintitlesubtext {
     width: 75%;
+    line-height: 30px;
   }
   .splash {
     padding: 40px 50px;
   }
+
+  .titledate {
+    align-items: center;
+  }
+
   .timeline {
     display: none;
   }
@@ -20,5 +29,50 @@
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
+  .paragraph {
+    overflow-x: hidden;
+    width: 300px;
+  }
+  .image {
+    height: 200px
+  }
+
+.aboutme {
+    row-gap: 10px;
+  }
+
+  .gallery {
+    height: 200px;
+    overflow-y: hidden;
+  }
+  .splash {
+    padding: 15px 20px;
+    row-gap: 5px;
+  }
+  .maintitlesubtext {
+    line-height: 20px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 13px;
+  }
+  .main-button {
+    font-size: 10px;
+    justify-content: center;
+    width: 60px;
+    height: auto; 
+  }
+  .outer-switch {
+    height: 24px;
+  }
   
+  .aboutme {
+    flex-direction: column;
+  }
+  .aboutme-desc {
+    align-items: center;
+    width: auto;
+  }
 } 
