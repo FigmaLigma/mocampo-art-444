@@ -1,10 +1,24 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
-
+  .button {
+    scale: 50%
+  }
+  .maintitlesubtext {
+    width: 75%;
+  }
+  .splash {
+    padding: 40px 50px;
+  }
+  .timeline {
+    display: none;
+  }
+  /* .abtme-bt {
+    width:50%
+  } */
 }
 
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
   
-}
+} 
