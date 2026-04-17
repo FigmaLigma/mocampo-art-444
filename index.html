@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" id="lightMode">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="js/script.js"
 </head>
@@ -71,8 +71,13 @@
           <a class="button" href="#fall-2025">Fall 2025</a>
         </div> -->
 
-        <div class="outer-switch">
-          <div class="inner-switch"></div>
+        <button class="bigger" class="main-button" id="invert-btn">⬤ ◐ 〇</button>
+
+
+        <!-- <div id="toggleLight" onclick="toggleTheme()">
+          <div class="outer-switch">
+           <div class="inner-switch"></div>
+          </div> -->
         </div>
 
       </div>
@@ -87,10 +92,15 @@
 
 <!-- SPLASH PAGE -->
 <section id="splash-section">
-  <div class="splash">
+  <div>
+    <img class="splash-back" src="images/splash-image.jpg" alt="hi" loading="lazy"/>
+    <div class="gradient"></div>
+    <div class="splash">
       <h1 class="maintitle">Maeko's Timeline UwU</h1>
       <h2 class="maintitlesubtext">Watch my rise to success or my downfall, whichever you think is happening.</h2>
+    </div>
   </div>
+
 </section>
 
 <!-- FIRST SECTION --> 

@@ -1,14 +1,13 @@
 /* CSS GOES HERE */
 
-/*darkmode*/
+
+
+/* DARKMODE */
 body.inverted {
     filter: invert(1);
     transition: 0.3s;
 }
 body.inverted img {
-    filter: invert(1);
-}
-body.inverted .splash-back {
     filter: invert(1);
 }
 
@@ -118,12 +117,6 @@ h3 {
     width: 65%;
 }
 
-.mybio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 section:nth-child(even) {
     background-color: #e4d8cc;
 }
@@ -201,24 +194,8 @@ section:nth-child(odd) {
     display: none;
 }
 
-.bigger {
-    font-family: "Comic Neue", cursive;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #332c24;
-    color: #f9f3eb;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    border: none;
-    height: 30px;
-    width: 100px;
-}
-
 .main-button {
-    font-family: "Comic Neue";
+    font-family: "Comic Neue", cursive;
     display: inline-block;
     padding: 5px 10px;
     background-color: #332c24;
@@ -293,25 +270,9 @@ a[href="about.html"]{
 
 #splash-section {
     min-height: 500px;
+    background-image: linear-gradient(rgba(63, 46, 28, 0.5)), url("../images/splash-image.jpg");
     background-size: cover;
     padding: 0px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-}
-.gradient {
-    background-color: (rgba(63, 46, 28, 0.5));
-    position: absolute;
-}
-
-.splash-back {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -325,10 +286,7 @@ a[href="about.html"]{
 
 .splash {
     background-color: rgba(249, 243, 235, .7);
-    bottom: 20px;
-    width: 100%;
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -417,7 +375,7 @@ section .gallery {
     display:flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
+    gap: 50px;
     width: 600px;
 }
 
@@ -425,9 +383,9 @@ div.aboutme-desc {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     width: 500px;
-    height: 200px;
+    height: 300px;
 }
 
 
