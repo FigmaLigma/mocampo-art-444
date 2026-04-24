@@ -26,31 +26,25 @@ navMenu.addEventListener('click', () => {
   navMenu.classList.toggle('hidden');
 });
 
-/*function toggleTheme() {
-  const theme = document.getElementById("toggleDark");
-  const current = theme.getAttribute("href");
 
-  if(current === "css/styles.css") {
-    theme.setAttribute("href", "css/darkmode.css");
+
+/* none of this works and i have no idea why
+ 
+// Select the question element
+const faqQuestion = document.querySelector('.faqquestion');
+// Select the answer element
+const faqAnswer = document.getElementById('faqanswer');
+
+// Set initial state so the first click always works
+faqAnswer.style.display = 'none';
+
+faqQuestion.addEventListener('click', function() {
+  // Toggle between hidden and visible
+  if (faqAnswer.style.display === 'none') {
+    faqAnswer.style.display = 'block';
   } else {
-    theme.setAttribute("href", "css/styles.css");
+    faqAnswer.style.display = 'none';
   }
-}*/
-
-
-/*const button = document.querySelector('#invert-btn');
-
-button.addEventListener('click', () => {
-
-    document.body.classList.toggle('inverted');
-    
-    if (document.body.classList.contains('inverted')) {
-        button.textContent = "⋆⁺₊⋆ ☾⋆⁺₊⋆";
-    } else {
-        button.textContent = "⁺₊⋆ ☀︎ ⋆⁺₊";
-    }
-
-    console.log("darkmodeactivated");
-}) */
+}); */
 
 

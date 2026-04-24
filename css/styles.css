@@ -1,6 +1,10 @@
 /* CSS GOES HERE */
 
 /*darkmode*/
+body.inverted .show {
+    filter: invert(1);
+}
+
 body.inverted {
     filter: invert(1);
     transition: 0.3s;
@@ -8,9 +12,15 @@ body.inverted {
 body.inverted img {
     filter: invert(1);
 }
+
+body.inverted iframe {
+    filter: invert(1);
+}
+
 body.inverted .splash-back {
     filter: invert(1);
 }
+
 
 /* hi */
 
@@ -62,14 +72,16 @@ section {
     background-color:  rgba(249, 243, 235, .7);
     border-radius: 0px 0px 5px 5px;
     text-align: center;
-    transform: translate(-33px, 18px);
-    position: absolute;
+    position: fixed;
+    z-index: 999;
+    translate: -35px 133px;
 
 }
 
 .transition {
     display: flex;
-    position: fixed;
+    position: relative;
+    transition: 0.3s;
     flex-direction: column;
    
 }
@@ -456,10 +468,12 @@ footer {
     padding-bottom: 15px 20px;
 }
 
-/*div#wrapper {
-    background: cornflowerblue
-}   
-    
+/* new stuff */
 
-
-    for practice*/
+.poopyheads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Comic Neue", cursive;
+    font-size: 15px;
+}

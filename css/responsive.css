@@ -6,7 +6,29 @@
   .tablet-mobile {
     display: none;
   }
+  #nav-menu .show {
+    display: none;
+  }
+
 }
+
+/* Hide answers by default */
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+}
+
+/* Show answer when this class is applied */
+.faq-answer.active {
+  display: block;
+}
+
+/* Make questions look clickable */
+.faq-sections {
+  cursor: pointer;
+  user-select: none; /* Prevents text highlighting on double clicks */
+}
+
 
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
