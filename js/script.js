@@ -1,3 +1,16 @@
+const btn = document.getElementById('stopBtn');
+const splashSection = document.getElementById('splash-section');
+
+btn.addEventListener('click', () => {
+  splashSection.classList.toggle('paused');
+  
+  if (splashSection.classList.contains('paused')) {
+    btn.textContent = '▶︎';
+  } else {
+    btn.textContent = '❚❚';
+  }
+});
+
 const menuBtn = document.getElementById('menu-btn');
 const navMenu = document.getElementById('nav-menu');
 
@@ -25,6 +38,7 @@ navMenu.addEventListener('click', () => {
   navMenu.classList.toggle('show');
   navMenu.classList.toggle('hidden');
 });
+
 
 
 

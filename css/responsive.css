@@ -1,7 +1,7 @@
 /* DESKTOP VIEW */
 @media only screen and (min-width:992px) {
   .homepage {
-    column-gap: 60px;
+    column-gap: 35px;
   }
   .tablet-mobile {
     display: none;
@@ -10,28 +10,21 @@
     display: none;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
 }
 
-/* Hide answers by default */
-.faq-answer {
-  display: none;
-  padding-top: 10px;
-}
 
-/* Show answer when this class is applied */
-.faq-answer.active {
-  display: block;
-}
-
-/* Make questions look clickable */
-.faq-sections {
-  cursor: pointer;
-  user-select: none; /* Prevents text highlighting on double clicks */
-}
 
 
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .paragraph {
     overflow-x: hidden;
     width: 75%;
@@ -74,10 +67,19 @@
 }
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
+  html {
+    overflow-x: hidden;
+  }
+  
   .paragraph {
     overflow-x: hidden;
     font-size: 10px;
     width: 250px;
+  }
+
+  #invert-btn {
+    height: 20px;
+    width: 70px;
   }
 
 #splash-section {
@@ -129,19 +131,21 @@
     width: 60px;
     height: auto; 
   }
-  .inner-switch {
-    width: 25px;
-    height: 15px;
-  }
-
-  .outer-switch {
-    width: 50px;
-  }
-
-  .outer-switch {
-    height: 24px;
-  }
+ 
   
+ .bigger {
+  font-size: 9px;
+ }
+
+ .faq-sections {
+  max-width: 250px;
+ }
+
+ .poopyheads {
+  max-width: 250px;
+  translate: 330px;
+ }
+
   .aboutme {
     flex-direction: column;
   }
